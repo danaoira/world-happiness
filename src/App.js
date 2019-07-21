@@ -11,9 +11,9 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import combinedReducer from './store/combinedReducer'
 import combinedEpics from './store/combinedEpics'
 import {
-  Title,
   Wrapper
 } from './styles/content'
+import { WorldHappiness } from './pages'
 
 const epicMiddleware = createEpicMiddleware()
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
@@ -41,7 +41,7 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <Wrapper>
-            <Title>Hello, world!</Title>
+            <WorldHappiness />
           </Wrapper>
         </Router>
       </Provider>
