@@ -1,5 +1,5 @@
 const serialize = (d) => ({
-  country: d['Country(region)'],
+  country: d['Country (region)'],
   ladder: d['Ladder'],
   ladderSD: d['SD of Ladder'],
   positiveAffect: d['Positive affect'],
